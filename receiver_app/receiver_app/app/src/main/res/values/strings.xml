@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Receiver</string>
+    <string name="s_textViewTitle">Currency Conversion Exchange</string>
+    <string name="s_buttonApply">Apply</string>
+</resources>

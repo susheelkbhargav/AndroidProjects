@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AndroidServices</string>
+    <string name="action_settings">Settings</string>
+    <string name="services_app">Services App</string>
+    <string name="the_purpose">The purpose of the App is to study the role of Android System in creating and managing the
+    life cycle of Bound and Local Services.</string>
+    <string name="pdfs_download_activity">PDFs Download Activity</string>
+    <string name="close">Close</string>
+    <string name="title_activity_pdf_download">PdfDownload</string>
+    <string name="start_download">Start All Downloads</string>
+    <!--
+    <string name="pdf_file_1_location">PDF1 File Location:</string>
+    <string name="pdf_file_2_location">PDF2 File Location:</string>
+    <string name="pdf_file_3_location">PDF3 File Location:</string>
+    <string name="pdf_file_4_location">PDF3 File Location:</string>
+    <string name="pdf_file_5_location">PDF4 File Location:</string>
+    <string name="link1">https://www.cisco.com/web/about/ac79/docs/innov/IoE.pdf</string>
+    <string name="link2">http://www.cisco.com/web/about/ac79/docs/innov/IoE_Economy.pdf</string>
+    <string name="link3">http://www.cisco.com/web/strategy/docs/gov/everything-for-cities.pdf</string>
+    <string name="link4"></string>
+    <string name="link5"></string>
+    -->
+
+</resources>

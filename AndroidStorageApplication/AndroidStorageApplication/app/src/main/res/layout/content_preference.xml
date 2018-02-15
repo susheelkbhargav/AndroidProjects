@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#088A68"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Preference"
+    tools:showIn="@layout/activity_preference">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/sjsu_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/preferencestorageview"
+        android:id="@+id/textViewTitle"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/androidbookname"
+        android:id="@+id/textViewPrefName"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_alignRight="@+id/textViewPrefAuth"
+        android:layout_alignEnd="@+id/textViewPrefAuth" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="180dp"
+        android:maxWidth="180dp"
+        android:id="@+id/editTextPrfName"
+        android:hint="@string/max70char"
+        android:layout_above="@+id/textViewPrefAuth"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/androidbookauthor"
+        android:id="@+id/textViewPrefAuth"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textViewPrefName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPrefAuth"
+        android:hint="@string/max70char"
+        android:layout_alignBottom="@+id/textViewPrefAuth"
+        android:layout_alignLeft="@+id/editTextPrfName"
+        android:layout_alignStart="@+id/editTextPrfName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/description"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textViewPrefAuth"
+        android:layout_alignEnd="@+id/textViewPrefAuth" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPrefDesc"
+        android:hint="@string/max255char"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editTextPrefAuth"
+        android:layout_alignStart="@+id/editTextPrefAuth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/buttonPrefSave"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/editTextPrefDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="savePreference"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/buttonPrefCanc"
+        android:layout_alignTop="@+id/buttonPrefSave"
+        android:layout_alignLeft="@+id/editTextPrefDesc"
+        android:layout_alignStart="@+id/editTextPrefDesc"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:onClick="finishPreference"/>
+
+</RelativeLayout>

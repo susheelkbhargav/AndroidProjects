@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyclapApp</string>
+    <string name="title">Clap App</string>
+    <string name="close_btn">Close App</string>
+</resources>

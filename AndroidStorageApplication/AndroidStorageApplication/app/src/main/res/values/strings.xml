@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AndroidDataStorage</string>
+    <string name="action_settings">Settings</string>
+    <string name="androiddatastoragesample">Android Data Storage Sample</string>
+    <string name="preferences">Preferences</string>
+    <string name="sqlite">SQLite</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_preference">preference</string>
+    <string name="preferencestorageview">Preference Storage View</string>
+    <string name="androidbookname">Android Book Name</string>
+    <string name="androidbookauthor">Android Book Author</string>
+    <string name="description">Description</string>
+    <string name="max70char">Max. 70 Characters</string>
+    <string name="max255char">Max. 255 Characters</string>
+    <string name="title_activity_sqlite">sqlite</string>
+    <string name="sqliteview">SQLite View</string>
+
+</resources>

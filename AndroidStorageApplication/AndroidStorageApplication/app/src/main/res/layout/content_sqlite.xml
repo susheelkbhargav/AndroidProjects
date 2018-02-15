@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#088A68"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Sqlite"
+    tools:showIn="@layout/activity_sqlite">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/sjsu_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/sqliteview"
+        android:id="@+id/textViewTitle"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/androidbookname"
+        android:id="@+id/textViewSqlName"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_alignRight="@+id/textViewPrefAuth"
+        android:layout_alignEnd="@+id/textViewPrefAuth" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSqlName"
+        android:layout_alignBottom="@+id/textViewSqlName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/max70char" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/androidbookauthor"
+        android:id="@+id/textViewSqlAuth"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textViewSqlName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSqlAuth"
+        android:hint="@string/max70char"
+        android:layout_alignBottom="@+id/textViewSqlAuth"
+        android:layout_alignLeft="@+id/editTextSqlName"
+        android:layout_alignStart="@+id/editTextSqlName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/description"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textViewSqlAuth"
+        android:layout_alignEnd="@+id/textViewSqlAuth" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSqlDesc"
+        android:hint="@string/max255char"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editTextSqlAuth"
+        android:layout_alignStart="@+id/editTextSqlAuth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/buttonSqlSave"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/editTextSqlDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="saveSqlite"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/buttonSqlCanc"
+        android:layout_alignTop="@+id/buttonSqlSave"
+        android:layout_alignLeft="@+id/editTextSqlDesc"
+        android:layout_alignStart="@+id/editTextSqlDesc"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:onClick="finishSqlite"/>
+
+</RelativeLayout>
